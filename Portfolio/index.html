@@ -5,22 +5,139 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-	<title>Portfólio</title>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<title>Portfolio</title>
 </head>
 <body>
-	<main>
-		<div class="first-line">Oi &#x1F44B EU SOU O ERIK</div>
-		<div class="second-line">
-			<p>FRONT-END</p>
-			<div class="icons">
-				<a href="https://www.linkedin.com/in/erikpanicio" target="_blank"><img src="images/linkedin-logo.png" alt="Linkedin"></a>
-				<a href="https://github.com/erikpanicio" target="_blank"><img src="images/github-logo.png" alt="Github"></a>
-				<a href="images/Currículo - Erik Panicio.pdf" target="_blank"><img src="images/curriculo.png" alt="Currículo"></a>
+	<section id="first-section" class="container">
+		<div class="group-lines contents" data-aos="fade-down" data-aos-duration="1500">
+			<div class="first-line">
+				<p>Oi &#x1F44B EU SOU O ERIK</p>
+			</div>
+
+			<div class="second-line">
+				<p>FRONT-END</p>
+				<div class="icons">
+					<a href="https://www.linkedin.com/in/erikpanicio" target="_blank"><img src="images/white-linkedin-logo.png" alt="Linkedin"></a>
+					<a href="https://github.com/erikpanicio" target="_blank"><img src="images/white-github-logo.png" alt="Github"></a>
+					<a href="images/Currículo - Erik Panicio.pdf" target="_blank"><img src="images/white-curriculo.png" alt="Currículo"></a>
+				</div>
+			</div>
+
+			<div class="third-line">
+				<p>DEVELOPER</p>
 			</div>
 		</div>
-		<div class="third-line">DEVELOPER</div>
+	</section>
+
+	<main id="main" class="container">
+		<div class="contents">
+			<h1>Projetos</h1>
+			<div class="flex-projects"> <!-- zoom-in -->
+				<div class="project row" data-aos="fade-right" data-aos-duration="1500">
+					<div class="overflow-image" onmouseenter="overflowMovimentDown()" onmouseleave="overflowMovimentUp()">
+						<img src="images/medicenter-project.png" alt="Landing Page">
+					</div>
+					<div class="project-desc">
+						<h2>Medicenter</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sed similique obcaecati eveniet officiis quam aperiam sint quasi, ea totam, iusto cupiditate minima quis quia autem a? Expedita, nostrum omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime omnis beatae nam adipisci quae, quisquam velit deleniti assumenda ullam tempore rerum fugit atque fugiat quaerat nostrum! Rem, sed impedit? Tenetur?</p>
+						<div class="technologies">
+							<div class="technology">HTML</div><!-- colocar como tag do youtube -->
+							<div class="technology">CSS</div>
+						</div>
+						<div class="links">
+							<a class="link-github" href="https://github.com/erikpanicio/Curso-B7Web/tree/main/B7Web/Projetos/MediCenter" target="_blank">
+								<span>Code</span>
+								<img src="images/github-logo.png" alt="Logo Github">
+							</a>
+							<a class="link-deploy" href="https://erikpanicio.github.io/Curso-B7Web/B7Web/Projetos/MediCenter" target="_blank">
+								<span>Live Demo</span>
+								<img src="images/external-link.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="project row-reverse" data-aos="fade-left" data-aos-duration="1500">
+					<div class="overflow-image" onmouseenter="overflowMovimentDown()" onmouseleave="overflowMovimentUp()">
+						<img src="images/cafe-street-project.png" alt="Landing Page">
+					</div>
+					<div class="project-desc">
+						<h2>Cafe Street</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sed similique obcaecati eveniet officiis quam aperiam sint quasi, ea totam, iusto cupiditate minima quis quia autem a? Expedita, nostrum omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime omnis beatae nam adipisci quae, quisquam velit deleniti assumenda ullam tempore rerum fugit atque fugiat quaerat nostrum! Rem, sed impedit? Tenetur?</p>
+						<div class="technologies">
+							<div class="technology">HTML</div><!-- colocar como tag do youtube -->
+							<div class="technology">CSS</div>
+							<div class="technology">JavaScript</div>
+						</div>
+						<div class="links">
+							<a class="link-github" href="https://github.com/erikpanicio/Landing-Pages/tree/main/Cafe%20Street" target="_blank">
+								<span>Code</span>
+								<img src="images/github-logo.png" alt="Logo Github">
+							</a>
+							<a class="link-deploy" href="https://erikpanicio.github.io/Landing-Pages/Cafe%20Street/index.html" target="_blank">
+								<span>Live Demo</span>
+								<img src="images/external-link.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="project row" data-aos="fade-right" data-aos-duration="1500">
+					<div class="overflow-image" onmouseenter="overflowMovimentDown()" onmouseleave="overflowMovimentUp()">
+						<img src="images/pizzaland-project.png" alt="Landing Page">
+					</div>
+					<div class="project-desc">
+						<h2>Pizzaland</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sed similique obcaecati eveniet officiis quam aperiam sint quasi, ea totam, iusto cupiditate minima quis quia autem a? Expedita, nostrum omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime omnis beatae nam adipisci quae, quisquam velit deleniti assumenda ullam tempore rerum fugit atque fugiat quaerat nostrum! Rem, sed impedit? Tenetur?</p>
+						<div class="technologies">
+							<div class="technology">HTML</div><!-- colocar como tag do youtube -->
+							<div class="technology">CSS</div>
+							<div class="technology">JavaScript</div>
+						</div>
+						<div class="links">
+							<a class="link-github" href="https://github.com/erikpanicio/Landing-Pages/tree/main/Pizzaland" target="_blank">
+								<span>Code</span>
+								<img src="images/github-logo.png" alt="Logo Github">
+							</a>
+							<a class="link-deploy" href="https://erikpanicio.github.io/Landing-Pages/Pizzaland/index.html" target="_blank">
+								<span>Live Demo</span>
+								<img src="images/external-link.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="project row-reverse" data-aos="fade-left" data-aos-duration="1500">
+					<div class="overflow-image" onmouseenter="overflowMovimentDown()" onmouseleave="overflowMovimentUp()">
+						<img class="small-image" src="images/card-project.png" alt="Landing Page">
+					</div>
+					<div class="project-desc">
+						<h2>Card Project</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sed similique obcaecati eveniet officiis quam aperiam sint quasi, ea totam, iusto cupiditate minima quis quia autem a? Expedita, nostrum omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime omnis beatae nam adipisci quae, quisquam velit deleniti assumenda ullam tempore rerum fugit atque fugiat quaerat nostrum! Rem, sed impedit? Tenetur?</p>
+						<div class="technologies">
+							<div class="technology">HTML</div><!-- colocar como tag do youtube -->
+							<div class="technology">CSS</div>
+							<div class="technology">JavaScript</div>
+						</div>
+						<div class="links">
+							<a class="link-github" href="https://github.com/erikpanicio/Card-Project" target="_blank">
+								<span>Code</span>
+								<img src="images/github-logo.png" alt="Logo Github">
+							</a>
+							<a class="link-deploy" href="https://erikpanicio.github.io/Card-Project/Card-Project/index.html" target="_blank">
+								<span>Live Demo</span>
+								<img src="images/external-link.png" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
 
-	<section></section>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+	  AOS.init();
+	</script>
+	<script src="script.js"></script>
 </body>
 </html>
