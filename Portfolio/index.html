@@ -9,9 +9,23 @@
 	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 	<title>Portfolio</title>
 </head>
-<body>
+<body class="neutraltheme">
+	<header>
+		<nav>
+			<ul class="navegation">
+				<li><a href="#">Sobre Mim</a></li>
+				<li><a href="#main">Projetos</a></li>
+			</ul>
+			<ul class="themes">
+				<li><button onclick="lightTheme()"><img src="images/light-theme.png" alt=""></button></li>
+				<li><button onclick="neutralTheme()"><img src="images/neutral-theme.png" alt=""></button></li>
+				<li><button onclick="darkTheme()"><img src="images/dark-theme.png" alt=""></button></li>
+			</ul>
+		</nav>
+	</header>
+
 	<section id="first-section" class="container">
-		<div class="group-lines contents" data-aos="fade-down" data-aos-duration="1500">
+		<div class="group-lines" data-aos="fade-down" data-aos-duration="1500">
 			<div class="first-line">
 				<p>Oi &#x1F44B EU SOU O ERIK</p>
 			</div>
@@ -35,15 +49,15 @@
 		<div class="contents">
 			<h1>Projetos</h1>
 			<div class="flex-projects"> <!-- zoom-in -->
-				<div class="project row" data-aos="fade-right" data-aos-duration="1500">
+				<div class="project row"> <!-- data-aos="fade-right" data-aos-duration="1500" -->
 					<div class="overflow-image" onmouseenter="overflowMovimentDown()" onmouseleave="overflowMovimentUp()">
-						<img src="images/medicenter-project.png" alt="Landing Page">
+						<img src="images/medicenter-project.png" alt="Landing Page"> <!-- colocar o outro tipo de imagem -->
 					</div>
 					<div class="project-desc">
 						<h2>Medicenter</h2>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sed similique obcaecati eveniet officiis quam aperiam sint quasi, ea totam, iusto cupiditate minima quis quia autem a? Expedita, nostrum omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime omnis beatae nam adipisci quae, quisquam velit deleniti assumenda ullam tempore rerum fugit atque fugiat quaerat nostrum! Rem, sed impedit? Tenetur?</p>
 						<div class="technologies">
-							<div class="technology">HTML</div><!-- colocar como tag do youtube -->
+							<div class="technology">HTML</div>
 							<div class="technology">CSS</div>
 						</div>
 						<div class="links">
@@ -58,7 +72,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="project row-reverse" data-aos="fade-left" data-aos-duration="1500">
+				<div class="project row-reverse" >
 					<div class="overflow-image" onmouseenter="overflowMovimentDown()" onmouseleave="overflowMovimentUp()">
 						<img src="images/cafe-street-project.png" alt="Landing Page">
 					</div>
@@ -66,7 +80,7 @@
 						<h2>Cafe Street</h2>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sed similique obcaecati eveniet officiis quam aperiam sint quasi, ea totam, iusto cupiditate minima quis quia autem a? Expedita, nostrum omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime omnis beatae nam adipisci quae, quisquam velit deleniti assumenda ullam tempore rerum fugit atque fugiat quaerat nostrum! Rem, sed impedit? Tenetur?</p>
 						<div class="technologies">
-							<div class="technology">HTML</div><!-- colocar como tag do youtube -->
+							<div class="technology">HTML</div>
 							<div class="technology">CSS</div>
 							<div class="technology">JavaScript</div>
 						</div>
@@ -82,7 +96,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="project row" data-aos="fade-right" data-aos-duration="1500">
+				<div class="project row" >
 					<div class="overflow-image" onmouseenter="overflowMovimentDown()" onmouseleave="overflowMovimentUp()">
 						<img src="images/pizzaland-project.png" alt="Landing Page">
 					</div>
@@ -90,7 +104,7 @@
 						<h2>Pizzaland</h2>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sed similique obcaecati eveniet officiis quam aperiam sint quasi, ea totam, iusto cupiditate minima quis quia autem a? Expedita, nostrum omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime omnis beatae nam adipisci quae, quisquam velit deleniti assumenda ullam tempore rerum fugit atque fugiat quaerat nostrum! Rem, sed impedit? Tenetur?</p>
 						<div class="technologies">
-							<div class="technology">HTML</div><!-- colocar como tag do youtube -->
+							<div class="technology">HTML</div>
 							<div class="technology">CSS</div>
 							<div class="technology">JavaScript</div>
 						</div>
@@ -106,7 +120,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="project row-reverse" data-aos="fade-left" data-aos-duration="1500">
+				<div class="project row-reverse" >
 					<div class="overflow-image" onmouseenter="overflowMovimentDown()" onmouseleave="overflowMovimentUp()">
 						<img class="small-image" src="images/card-project.png" alt="Landing Page">
 					</div>
@@ -114,7 +128,7 @@
 						<h2>Card Project</h2>
 						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sed similique obcaecati eveniet officiis quam aperiam sint quasi, ea totam, iusto cupiditate minima quis quia autem a? Expedita, nostrum omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime omnis beatae nam adipisci quae, quisquam velit deleniti assumenda ullam tempore rerum fugit atque fugiat quaerat nostrum! Rem, sed impedit? Tenetur?</p>
 						<div class="technologies">
-							<div class="technology">HTML</div><!-- colocar como tag do youtube -->
+							<div class="technology">HTML</div>
 							<div class="technology">CSS</div>
 							<div class="technology">JavaScript</div>
 						</div>
