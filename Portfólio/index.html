@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<title>Portfolio</title>
+</head>
+<body class="neutraltheme">
+	<header>
+		<nav>
+			<ul class="navegation">
+				<li><a href="#">Sobre Mim</a></li>
+				<li><a href="#main">Projetos</a></li>
+			</ul>
+			<ul class="themes">
+				<li><button onclick="lightTheme()"><img src="images/light-theme.png" alt=""></button></li>
+				<li><button onclick="neutralTheme()"><img src="images/neutral-theme.png" alt=""></button></li>
+				<li><button onclick="darkTheme()"><img src="images/dark-theme.png" alt=""></button></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section id="first-section" class="container">
+		<div class="group-lines" data-aos="fade-down" data-aos-duration="1500">
+			<div class="first-line">
+				<p>Oi &#x1F44B EU SOU O ERIK</p>
+			</div>
+
+			<div class="second-line">
+				<p>FRONT-END</p>
+				<div class="icons">
+					<a href="https://www.linkedin.com/in/erikpanicio" target="_blank"><img src="images/white-linkedin-logo.png" alt="Linkedin"></a>
+					<a href="https://github.com/erikpanicio" target="_blank"><img src="images/white-github-logo.png" alt="Github"></a>
+					<a href="images/Currículo - Erik Panicio.pdf" target="_blank"><img src="images/white-curriculo.png" alt="Currículo"></a>
+				</div>
+			</div>
+
+			<div class="third-line">
+				<p>DEVELOPER</p>
+			</div>
+		</div>
+	</section>
+
+	<main id="main" class="container">
+		<div class="contents">
+			<h1>Projetos</h1>
+			<div class="flex-projects">
+				<div class="project row" data-aos="fade-right" data-aos-duration="1500">
+					<a href="https://erikpanicio.github.io/Curso-B7Web/B7Web/Projetos/MediCenter/" target="_blank"><img class="project-image" src="images/medicenter-fullproject.png" alt="Landing Page"></a>
+					<a href="https://erikpanicio.github.io/Curso-B7Web/B7Web/Projetos/MediCenter/" target="_blank">MEDICENTER</a>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias quibusdam dolores cumque ad velit odio perferendis quas! Cupiditate iste amet reprehenderit vitae! Rerum provident facilis non quis esse? Saepe, aliquid!</p>
+				</div>
+				<div class="project row-reverse" data-aos="fade-right" data-aos-duration="1500">
+					<a href="https://erikpanicio.github.io/Landing-Pages/Cafe%20Street/index.html" target="_blank"><img class="project-image" src="images/cafe-street-fullproject.png" alt="Landing Page"> </a>
+					<a href="https://erikpanicio.github.io/Landing-Pages/Cafe%20Street/index.html" target="_blank">CAFE STREET</a>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias quibusdam dolores cumque ad velit odio perferendis quas! Cupiditate iste amet reprehenderit vitae! Rerum provident facilis non quis esse? Saepe, aliquid!</p>
+				</div>
+				<div class="project row" data-aos="fade-right" data-aos-duration="1500">
+					<a href="https://erikpanicio.github.io/Landing-Pages/Pizzaland/index.html" target="_blank"><img class="project-image" src="images/pizzaland-fullproject.png" alt="Landing Page"> </a>
+					<a href="https://erikpanicio.github.io/Landing-Pages/Pizzaland/index.html" target="_blank">PIZZALAND</a>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias quibusdam dolores cumque ad velit odio perferendis quas! Cupiditate iste amet reprehenderit vitae! Rerum provident facilis non quis esse? Saepe, aliquid!</p>
+				</div>
+				<div class="project row-reverse" data-aos="fade-right" data-aos-duration="1500">
+					<a href="https://erikpanicio.github.io/Card-Project/Card-Project/index.html" target="_blank"><img class="project-image" src="images/card-project-fullproject.png" alt="Landing Page"> </a>
+					<a href="https://erikpanicio.github.io/Card-Project/Card-Project/index.html" target="_blank">CARD PROJECT</a>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias quibusdam dolores cumque ad velit odio perferendis quas! Cupiditate iste amet reprehenderit vitae! Rerum provident facilis non quis esse? Saepe, aliquid!</p>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+	  AOS.init();
+	</script>
+	<script src="script.js"></script>
+</body>
+</html>
