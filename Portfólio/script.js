@@ -1,16 +1,3 @@
-/* rolagem suave do overflow-image */
-
-/* function overflowMovimentDown() {
-	let overflow_projects = document.querySelector(".overflow-image")
-	overflow_projects.scrollTo(0, overflow_projects.scrollHeight)
-}
-
-function overflowMovimentUp() {
-	let overflow_projects = document.querySelector(".overflow-image")
-	overflow_projects.scrollTo(0, 0)
-}
- */
-
 window.addEventListener("scroll", showMenu)
 
 function showMenu() {
@@ -24,6 +11,7 @@ function showMenu() {
 	}
 }
 
+/* 
 let body = document.querySelector("body")
 
 function lightTheme() {
@@ -45,6 +33,36 @@ function darkTheme() {
 	body.classList.replace(theme, "darktheme")
 
 	changeImage()
+}
+*/
+
+let root = document.documentElement
+
+function lightTheme() {
+	root.style.setProperty("--background-first-section", "#ffffff")
+	root.style.setProperty("--color-first-section", "#6f24da")
+	root.style.setProperty("--color-pattern", "#6f24da")
+	root.style.setProperty("--background-main", "#ffffff")
+
+	changeImage(1) /* ver */
+}
+
+function neutralTheme() {
+	root.style.setProperty("--background-first-section", "#3E0995")
+	root.style.setProperty("--color-first-section", "#ffffff")
+	root.style.setProperty("--color-pattern", "#000000")
+	root.style.setProperty("--background-main", "#ffffff")
+	
+	changeImage() /* ver */
+}
+
+function darkTheme() {
+	root.style.setProperty("--background-first-section", "#1e1e1e")
+	root.style.setProperty("--color-first-section", "#ffffff")
+	root.style.setProperty("--color-pattern", "#ffffff")
+	root.style.setProperty("--background-main", "#1e1e1e")
+
+	changeImage() /* ver */
 }
 
 function changeImage(num) {
