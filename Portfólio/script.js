@@ -39,28 +39,28 @@ function darkTheme() {
 let root = document.documentElement
 
 function lightTheme() {
-	root.style.setProperty("--background-first-section", "#ffffff")
-	root.style.setProperty("--color-first-section", "#6f24da")
-	root.style.setProperty("--color-pattern", "#6f24da")
-	root.style.setProperty("--background-main", "#ffffff")
+	root.style.setProperty("--background-pattern1", "#ffffff")
+	root.style.setProperty("--color-pattern1", "#6f24da")
+	root.style.setProperty("--color-pattern2", "#6f24da")
+	root.style.setProperty("--background-pattern2", "#ffffff")
 
 	changeImage(1) /* ver */
 }
 
 function neutralTheme() {
-	root.style.setProperty("--background-first-section", "#3E0995")
-	root.style.setProperty("--color-first-section", "#ffffff")
-	root.style.setProperty("--color-pattern", "#000000")
-	root.style.setProperty("--background-main", "#ffffff")
+	root.style.setProperty("--background-pattern1", "#3E0995")
+	root.style.setProperty("--color-pattern1", "#ffffff")
+	root.style.setProperty("--color-pattern2", "#000000")
+	root.style.setProperty("--background-pattern2", "#ffffff")
 	
 	changeImage() /* ver */
 }
 
 function darkTheme() {
-	root.style.setProperty("--background-first-section", "#1e1e1e")
-	root.style.setProperty("--color-first-section", "#ffffff")
-	root.style.setProperty("--color-pattern", "#ffffff")
-	root.style.setProperty("--background-main", "#1e1e1e")
+	root.style.setProperty("--background-pattern1", "#1e1e1e")
+	root.style.setProperty("--color-pattern1", "#ffffff")
+	root.style.setProperty("--color-pattern2", "#ffffff")
+	root.style.setProperty("--background-pattern2", "#1e1e1e")
 
 	changeImage() /* ver */
 }
