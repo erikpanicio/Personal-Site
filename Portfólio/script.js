@@ -1,3 +1,5 @@
+/* Menu */
+
 window.addEventListener("scroll", showMenu)
 
 function showMenu() {
@@ -11,30 +13,7 @@ function showMenu() {
 	}
 }
 
-/* 
-let body = document.querySelector("body")
-
-function lightTheme() {
-	let theme = body.className
-	body.classList.replace(theme, "lighttheme")
-
-	changeImage(1)
-}
-
-function neutralTheme() {
-	let theme = body.className
-	body.classList.replace(theme, "neutraltheme")
-
-	changeImage()
-}
-
-function darkTheme() {
-	let theme = body.className
-	body.classList.replace(theme, "darktheme")
-
-	changeImage()
-}
-*/
+/* Themes */
 
 let root = document.documentElement
 
@@ -81,3 +60,16 @@ function changeImage(num) {
 		}
 	}
 }
+
+/* Slider */
+
+let slider = document.querySelector("#skills .slider")
+
+function slideTransition(slide_num) {
+	calc_transition = 33.33 * slide_num /* ver */
+	slider.style.transform = `translate3d(-${calc_transition}%, 0px, 0px)`
+}
+
+/* window.addEventListener("resize", () =>{
+	slideTransition(0)
+}) */
