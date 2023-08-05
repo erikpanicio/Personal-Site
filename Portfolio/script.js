@@ -13,19 +13,19 @@ function showTopMenu() {
 	}
 }
 
-let menu_opening = document.querySelector(".menu-opening")
-let menu_closed = document.querySelector(".menu-closed")
+let open_menu = document.querySelector(".open-menu")
+let close_menu = document.querySelector(".close-menu")
 
 function showSideMenu() {
 	header.style.right = "0px"
-	menu_opening.style.display = "none"
-	menu_closed.style.right = "155px"
+	open_menu.style.display = "none"
+	close_menu.style.right = "155px"
 }
 
 function closeSideMenu() {
 	header.style.right = "-200px"
-	menu_opening.style.display = "block"
-	menu_closed.style.right = "-200px"
+	open_menu.style.display = "block"
+	close_menu.style.right = "-200px"
 }
 
 /* Themes */
@@ -84,7 +84,3 @@ function slideTransition(slide_num) {
 	calc_transition = 33.33 * slide_num /* ver */
 	slider.style.transform = `translate3d(-${calc_transition}%, 0px, 0px)`
 }
-
-/* window.addEventListener("resize", () =>{
-	slideTransition(0)
-}) */

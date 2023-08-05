@@ -32,7 +32,6 @@ header {
 	display: none;
 	width: 100%;
 	background-color: #000000a6;
-	/* transition: all 5s; */
 	position: fixed;
 	z-index: 100;
 }
@@ -79,7 +78,7 @@ nav img {
 	z-index: 10;
 }
 
-.menu-opening {
+.open-menu {
 	background-color: transparent;
 	color: white;
 	
@@ -93,7 +92,7 @@ nav img {
 	box-shadow: 1px 1px 3px black;
 }
 
-.menu-opening::before {
+.open-menu::before {
 	display: block;
 	content: "";
 	width: 30px;
@@ -103,7 +102,7 @@ nav img {
 	box-shadow: 1px 1px 3px black;
 }
 
-.menu-opening::after {
+.open-menu::after {
 	display: block;
 	content: "";
 	width: 30px;
@@ -113,18 +112,18 @@ nav img {
 	box-shadow: 1px 1px 3px black;
 }
 
-.menu-closed {
+.close-menu {
 	background-color: transparent;
 	color: white;
 	position: fixed;
 	right: -200px;
 	padding: 15px;
 	/* margin: 20px; */
-	transition: right 1s;
+	transition: right 1s !important;
 	z-index: 1000;
 }
 
-.menu-closed::after {
+.close-menu::after {
 	content: "\274c";
 }
 
@@ -416,7 +415,7 @@ h1 {
 		font-size: 20px;
 	}
 
-	.menu-opening {
+	.open_menu {
 		display: block;	
 	}
 
