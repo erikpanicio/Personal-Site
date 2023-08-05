@@ -1,6 +1,8 @@
-window.addEventListener("scroll", showMenu)
+/* Menu */
 
-function showMenu() {
+window.addEventListener("scroll", showTopMenu)
+
+function showTopMenu() {
 	let header = document.querySelector("header")
 
 	if(window.scrollY == 0){
@@ -11,30 +13,32 @@ function showMenu() {
 	}
 }
 
-/* 
-let body = document.querySelector("body")
+function showSideMenu() {
+	let header = document.querySelector("header")
+/* 	header.style.display = "block" */
+	header.style.right = "0px"
 
-function lightTheme() {
-	let theme = body.className
-	body.classList.replace(theme, "lighttheme")
+	let menu_opening = document.querySelector(".menu-opening")
+	menu_opening.style.display = "none"
 
-	changeImage(1)
+	let menu_closed = document.querySelector(".menu-closed")
+	menu_closed.style.display = "block"
+	menu_closed.style.right = "155px"
 }
 
-function neutralTheme() {
-	let theme = body.className
-	body.classList.replace(theme, "neutraltheme")
+function closeSideMenu() {
+	let header = document.querySelector("header")
+	/* header.style.display = "none" */
+	header.style.right = "-200px"
 
-	changeImage()
+	let menu_opening = document.querySelector(".menu-opening")
+	menu_opening.style.display = "block"
+
+	let menu_closed = document.querySelector(".menu-closed")
+	menu_closed.style.display = "none"
 }
 
-function darkTheme() {
-	let theme = body.className
-	body.classList.replace(theme, "darktheme")
-
-	changeImage()
-}
-*/
+/* Themes */
 
 let root = document.documentElement
 
@@ -81,3 +85,16 @@ function changeImage(num) {
 		}
 	}
 }
+
+/* Slider */
+
+let slider = document.querySelector("#skills .slider2")
+
+function slideTransition(slide_num) {
+	calc_transition = 33.33 * slide_num /* ver */
+	slider.style.transform = `translate3d(-${calc_transition}%, 0px, 0px)`
+}
+
+/* window.addEventListener("resize", () =>{
+	slideTransition(0)
+}) */
