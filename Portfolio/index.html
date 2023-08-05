@@ -14,6 +14,7 @@
 		<nav>
 			<ul class="navegation">
 				<li><a href="#">Sobre Mim</a></li>
+				<li><a href="#skills">Habilidades</a></li>
 				<li><a href="#main">Projetos</a></li>
 			</ul>
 			<ul class="themes">
@@ -23,6 +24,10 @@
 			</ul>
 		</nav>
 	</header>
+	<div class="test">
+		<button class="menu-opening" onclick="showSideMenu()" data-aos="fade-down" data-aos-duration="1500"></button>
+	</div>
+		<button class="menu-closed" onclick="closeSideMenu()" data-aos="fade-down" data-aos-duration="1500"></button>
 
 	<section id="first-section" class="container">
 		<div class="group-lines" data-aos="fade-down" data-aos-duration="1500">
@@ -54,47 +59,48 @@
 				<button onclick="slideTransition(2)">Certificados</button>
 			</div>
 			<div class="slider">
-				<div class="slide1 technologies"> <!-- slide1 -->
-					<p class="desc">
-						Eu sempre busquei ao máximo me atualizar e ficar por dentro das novas tecnologias que estão em alta no mercado de trabalho. Desde quando comecei a estudar minha primeira linguagem na escola (C++) eu sempre quis aprender sobre novas linguagens. Desde então estudei C# e Python, e logo após, quando percebi que queria atuar no mercado de trabalho como Desenvolvedor Front-end, comecei a focar todos os meus estudos para desinvolvimento em interface gráfica.
-
-						Eu possuo vasta experiência em HTML, CSS, Sass, JavaScrit, TypeScript, React JS, React Native, Node JS, Bootstrap, Python, PostgreSQL, dentre outras. 
-					</p>
-					<div class="languages">
-						<div class="image-background"><img src="images/html-logo.png" alt="HTML logo"></div>
-						<div class="image-background"><img src="images/css-logo.png" alt="CSS logo"></div>
-						<div class="image-background"><img src="images/js-logo.png" alt="JavaScript logo"></div>
-						<div class="image-background"><img src="images/bootstrap-logo.png" alt="Bootstrap logo"></div>
-						<div class="image-background"><img src="images/reactjs-logo.png" alt="ReactJs logo"></div>
-						<div class="image-background"><img src="images/nodejs-logo.png" alt="NodeJs logo"></div>
+				<div class="slider2">
+					<div class="slide1 technologies"> <!-- slide1 -->
+						<p class="desc">
+							Eu sempre busquei ao máximo me atualizar e ficar por dentro das novas tecnologias que estão em alta no mercado de trabalho. Desde quando comecei a estudar minha primeira linguagem na escola (C++) eu sempre quis aprender sobre novas linguagens. Desde então estudei C# e Python, e logo após, quando percebi que queria atuar no mercado de trabalho como Desenvolvedor Front-end, comecei a focar todos os meus estudos para desinvolvimento em interface gráfica.
+							Eu possuo vasta experiência em HTML, CSS, Sass, JavaScrit, TypeScript, React JS, React Native, Node JS, Bootstrap, Python, PostgreSQL, dentre outras.
+						</p>
+						<div class="languages">
+							<div class="image-background"><img src="images/html-logo.png" alt="HTML logo"></div>
+							<div class="image-background"><img src="images/css-logo.png" alt="CSS logo"></div>
+							<div class="image-background"><img src="images/js-logo.png" alt="JavaScript logo"></div>
+							<div class="image-background"><img src="images/bootstrap-logo.png" alt="Bootstrap logo"></div>
+							<div class="image-background"><img src="images/reactjs-logo.png" alt="ReactJs logo"></div>
+							<div class="image-background"><img src="images/nodejs-logo.png" alt="NodeJs logo"></div>
+						</div>
 					</div>
-				</div>
-				<div class="slide2 technologies"> <!-- slide2 -->
-					<p class="desc">
-						Se você conhece o inimigo e conhece a si mesmo, não precisa temer o resultado de cem batalhas. Se você se conhece mas não conhece o inimigo, para cada vitória ganha sofrerá também uma derrota. Se você não conhece nem o inimigo nem a si mesmo, perderá todas as batalhas...
-						Se você conhece o inimigo e conhece a si mesmo, não precisa temer o resultado de cem batalhas. Se você se conhece mas não conhece o inimigo, para cada vitória ganha sofrerá também uma derrota. Se você não conhece nem o inimigo nem a si mesmo, perderá todas as batalhas...
-					</p>
-					<div class="languages">
-						<div class="image-background"><img src="images/html-logo.png" alt="HTML logo"></div>
-						<div class="image-background"><img src="images/css-logo.png" alt="CSS logo"></div>
-						<div class="image-background"><img src="images/js-logo.png" alt="JavaScript logo"></div>
-						<div class="image-background"><img src="images/bootstrap-logo.png" alt="Bootstrap logo"></div>
-						<div class="image-background"><img src="images/reactjs-logo.png" alt="ReactJs logo"></div>
-						<div class="image-background"><img src="images/nodejs-logo.png" alt="NodeJs logo"></div>
+					<div class="slide2 technologies"> <!-- slide2 -->
+						<p class="desc">
+							Se você conhece o inimigo e conhece a si mesmo, não precisa temer o resultado de cem batalhas. Se você se conhece mas não conhece o inimigo, para cada vitória ganha sofrerá também uma derrota. Se você não conhece nem o inimigo nem a si mesmo, perderá todas as batalhas...
+							Se você conhece o inimigo e conhece a si mesmo, não precisa temer o resultado de cem batalhas. Se você se conhece mas não conhece o inimigo, para cada vitória ganha sofrerá também uma derrota. Se você não conhece nem o inimigo nem a si mesmo, perderá todas as batalhas...
+						</p>
+						<div class="languages">
+							<div class="image-background"><img src="images/html-logo.png" alt="HTML logo"></div>
+							<div class="image-background"><img src="images/css-logo.png" alt="CSS logo"></div>
+							<div class="image-background"><img src="images/js-logo.png" alt="JavaScript logo"></div>
+							<div class="image-background"><img src="images/bootstrap-logo.png" alt="Bootstrap logo"></div>
+							<div class="image-background"><img src="images/reactjs-logo.png" alt="ReactJs logo"></div>
+							<div class="image-background"><img src="images/nodejs-logo.png" alt="NodeJs logo"></div>
+						</div>
 					</div>
-				</div>
-				<div class="slide3 technologies"> <!-- slide3 -->
-					<p class="desc">
-						Se você conhece o inimigo e conhece a si mesmo, não precisa temer o resultado de cem batalhas. Se você se conhece mas não conhece o inimigo, para cada vitória ganha sofrerá também uma derrota. Se você não conhece nem o inimigo nem a si mesmo, perderá todas as batalhas...
-						Se você conhece o inimigo e conhece a si mesmo, não precisa temer o resultado de cem batalhas. Se você se conhece mas não conhece o inimigo, para cada vitória ganha sofrerá também uma derrota. Se você não conhece nem o inimigo nem a si mesmo, perderá todas as batalhas...
-					</p>
-					<div class="languages">
-						<div class="image-background"><img src="images/html-logo.png" alt="HTML logo"></div>
-						<div class="image-background"><img src="images/css-logo.png" alt="CSS logo"></div>
-						<div class="image-background"><img src="images/js-logo.png" alt="JavaScript logo"></div>
-						<div class="image-background"><img src="images/bootstrap-logo.png" alt="Bootstrap logo"></div>
-						<div class="image-background"><img src="images/reactjs-logo.png" alt="ReactJs logo"></div>
-						<div class="image-background"><img src="images/nodejs-logo.png" alt="NodeJs logo"></div>
+					<div class="slide3 technologies"> <!-- slide3 -->
+						<p class="desc">
+							Se você conhece o inimigo e conhece a si mesmo, não precisa temer o resultado de cem batalhas. Se você se conhece mas não conhece o inimigo, para cada vitória ganha sofrerá também uma derrota. Se você não conhece nem o inimigo nem a si mesmo, perderá todas as batalhas...
+							Se você conhece o inimigo e conhece a si mesmo, não precisa temer o resultado de cem batalhas. Se você se conhece mas não conhece o inimigo, para cada vitória ganha sofrerá também uma derrota. Se você não conhece nem o inimigo nem a si mesmo, perderá todas as batalhas...
+						</p>
+						<div class="languages">
+							<div class="image-background"><img src="images/html-logo.png" alt="HTML logo"></div>
+							<div class="image-background"><img src="images/css-logo.png" alt="CSS logo"></div>
+							<div class="image-background"><img src="images/js-logo.png" alt="JavaScript logo"></div>
+							<div class="image-background"><img src="images/bootstrap-logo.png" alt="Bootstrap logo"></div>
+							<div class="image-background"><img src="images/reactjs-logo.png" alt="ReactJs logo"></div>
+							<div class="image-background"><img src="images/nodejs-logo.png" alt="NodeJs logo"></div>
+						</div>
 					</div>
 				</div>
 			</div>

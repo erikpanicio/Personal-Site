@@ -1,8 +1,8 @@
 /* Menu */
 
-window.addEventListener("scroll", showMenu)
+window.addEventListener("scroll", showTopMenu)
 
-function showMenu() {
+function showTopMenu() {
 	let header = document.querySelector("header")
 
 	if(window.scrollY == 0){
@@ -11,6 +11,31 @@ function showMenu() {
 	else {
 		header.style.display = "block"
 	}
+}
+
+function showSideMenu() {
+	let header = document.querySelector("header")
+/* 	header.style.display = "block" */
+	header.style.right = "0px"
+
+	let menu_opening = document.querySelector(".menu-opening")
+	menu_opening.style.display = "none"
+
+	let menu_closed = document.querySelector(".menu-closed")
+	menu_closed.style.display = "block"
+	menu_closed.style.right = "155px"
+}
+
+function closeSideMenu() {
+	let header = document.querySelector("header")
+	/* header.style.display = "none" */
+	header.style.right = "-200px"
+
+	let menu_opening = document.querySelector(".menu-opening")
+	menu_opening.style.display = "block"
+
+	let menu_closed = document.querySelector(".menu-closed")
+	menu_closed.style.display = "none"
 }
 
 /* Themes */
@@ -63,7 +88,7 @@ function changeImage(num) {
 
 /* Slider */
 
-let slider = document.querySelector("#skills .slider")
+let slider = document.querySelector("#skills .slider2")
 
 function slideTransition(slide_num) {
 	calc_transition = 33.33 * slide_num /* ver */

@@ -31,7 +31,7 @@ body::-webkit-scrollbar-thumb {
 header {
 	display: none;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.650);
+	background-color: #000000a6;
 	/* transition: all 5s; */
 	position: fixed;
 	z-index: 100;
@@ -69,6 +69,63 @@ nav button {
 nav img {
 	height: 20px;
 	vertical-align: middle;
+}
+
+.test {
+	position: fixed;
+	right: 0;
+	padding: 20px;
+	margin: 20px 10px;
+}
+
+.menu-opening {
+	display: none;
+	background-color: transparent;
+	color: white;
+	/* margin: 30px 30px 30px 20px; */
+
+	/* fiz desse jeito para poder colocar o box-shadow */
+	content: "";
+	width: 30px;
+	height: 3px;
+	background-color: white;
+	box-shadow: 1px 1px 3px black;
+}
+
+.menu-opening::before {
+	display: block;
+	content: "";
+	width: 30px;
+	height: 3px;
+	margin-top: 10px;
+	background-color: white;
+	box-shadow: 1px 1px 3px black;
+}
+
+.menu-opening::after {
+	display: block;
+	content: "";
+	width: 30px;
+	height: 3px;
+	margin-top: 8px;
+	background-color: white;
+	box-shadow: 1px 1px 3px black;
+}
+
+.menu-closed {
+	display: none;
+	background-color: transparent;
+	color: white;
+	position: fixed;
+	right: -200px;
+	padding: 20px;
+	/* margin: 20px; */
+	transition: all 1s;
+	z-index: 1000;
+}
+
+.menu-closed::after {
+	content: "\274c";
 }
 
 #first-section {
@@ -150,13 +207,13 @@ nav img {
 	background-color: var(--background-pattern1);
 }
 
-#skills .contents {
+/* #skills .contents {
 	overflow: hidden;
 }
-
-#skills .contents::-webkit-scrollbar {
+ */
+/* #skills .contents::-webkit-scrollbar {
 	height: 0;
-}
+} */
 
 #skills h1 {
 	color: var(--color-pattern1);
@@ -174,25 +231,32 @@ nav img {
 	cursor: pointer;
 }
 
-#skills .menu-buttons button:last-child {
+/* #skills .menu-buttons button:last-child {
 	margin-right: 0;
-}
+} */
 
 #skills .menu-buttons button:hover {
 	opacity: 70%;
 }
 
 #skills .slider {
+	width: 100%;
+	overflow: hidden;
+}
+
+#skills .slider::-webkit-scrollbar {
+	height: 0;
+}
+
+#skills .slider2 {
 	display: flex;
-	width: 300%; /* 3540px */ /* default value = 1180px */
+	width: 300%;
 	transform: translate3d(0px, 0px, 0px);
 	transition: transform 1s;
 }
 
 #skills .slide1, #skills .slide2, #skills .slide3 {
 	width: 100%;
-	/* border: 1px solid pink; */
-	/* margin-right: 20px; */
 }
 
 .technologies {
@@ -207,7 +271,6 @@ nav img {
 	overflow-y: auto;
 	color: var(--color-pattern1);
 	text-align: justify;
-	/* margin-right: 10px;  *//* COLOCADOS ONTEM (não tinha) */
 }
 
 .technologies .languages {
@@ -264,6 +327,7 @@ h1 {
 .project a {
 	color: var(--color-pattern2);
 	font-weight: bold;
+	text-decoration: underline;
 	font-size: 24px;
 }
 
@@ -287,72 +351,6 @@ h1 {
 	height: 450px;
 }
 
-/* 
-.project-desc {
-	width: 400px;
-	text-align: center;
-
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.project-desc p {
-	height: 175px;
-	overflow-y: auto;
-	padding: 0px 5px;
-	color: black;
-}
-
-.project-desc p::-webkit-scrollbar {
-	width: 5px;
-	background-color: gray;
-}
-
-.project-desc p::-webkit-scrollbar-thumb {
-	background-color: #300868;
-}
-
-.project-desc .technologies {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin: 20px 0px;
-}
-
-.technologies .technology {
-	margin: 5px 10px;
-	font-weight: bold;
-	background-color: #3E0995;
-	border-radius: 10px;
-	padding: 5px 10px;
-	color: white;
-}
-
-.links {
-	display: flex;
-	justify-content: space-around;
-}
-
-.link-github,
-.link-deploy {
-	display: flex;
-	align-items: center;
-}
-
-.link-github span,
-.link-deploy span {
-	color: black;
-	font-weight: bold;
-}
-
-.link-github img,
-.link-deploy img {
-	height: 30px;
-	margin-left: 5px;
-}
- */
-
 @media(max-width: 1250px), (max-height: 400px) {
 	.first-line {
 		font-size: 2vw;
@@ -373,8 +371,6 @@ h1 {
 	.project {
 		flex-direction: column;
 		align-items: center;
-		/* border: 5px solid black;
-		padding: 20px; */
 	}
 
 	.project-desc {
@@ -399,13 +395,11 @@ h1 {
 
 @media (max-width: 600px) {
 	header {
+		display: none;
+		height: 100vh;
 		width: 200px;
-		/* right: 0; */
-
-		border-radius: 20px;
-		bottom: 0;
-		left: 50%;
-  		transform: translate(-50%);
+		right: -200px;
+		transition: right 1s;
 	}
 
 	nav {
@@ -414,8 +408,19 @@ h1 {
 	}
 
 	nav ul.navegation {
-		display: block;
+		flex-direction: column;
+		margin-top: 60px;
 	}
+
+	nav a {
+		font-size: 20px;
+	}
+
+	.menu-opening {
+		display: block;	
+	}
+
+
 
 	.first-line {
 		font-size: 4vw;
@@ -427,12 +432,13 @@ h1 {
 
 	#skills .menu-buttons {
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
+		flex-wrap: wrap;
 	}
 
-	#skills .menu-buttons button { 
+	/* #skills .menu-buttons button { 
 		font-size: 4.13vw;
-	}
+	} */
 
 	.image-background {
 		height: 17.3vw;
@@ -454,18 +460,8 @@ h1 {
 }
 
 @media(max-width: 400px) {
-	/* #skills .menu-buttons {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-
-	#skills .menu-buttons button {
-		margin: 0 0 10px 0;
-	} */
-
-	.image-background {
+	/* .image-background {
 		height: 25vw;
 		width: 25vw;
-	}
+	} */
 }
