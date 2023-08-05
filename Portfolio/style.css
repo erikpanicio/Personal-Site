@@ -118,7 +118,7 @@ nav img {
 	color: white;
 	position: fixed;
 	right: -200px;
-	padding: 20px;
+	padding: 15px;
 	/* margin: 20px; */
 	transition: right 1s;
 	z-index: 1000;
@@ -419,8 +419,6 @@ h1 {
 	.menu-opening {
 		display: block;	
 	}
-
-
 
 	.first-line {
 		font-size: 4vw;
