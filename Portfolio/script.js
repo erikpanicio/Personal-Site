@@ -5,7 +5,7 @@ window.addEventListener("scroll", showTopMenu)
 function showTopMenu() {
 	let header = document.querySelector("header")
 
-	if(window.scrollY == 0){
+	if(window.scrollY == 0 && window.innerWidth > 600){
 		header.style.display = "none"
 	}
 	else {
@@ -15,27 +15,24 @@ function showTopMenu() {
 
 function showSideMenu() {
 	let header = document.querySelector("header")
-/* 	header.style.display = "block" */
 	header.style.right = "0px"
 
 	let menu_opening = document.querySelector(".menu-opening")
 	menu_opening.style.display = "none"
 
 	let menu_closed = document.querySelector(".menu-closed")
-	menu_closed.style.display = "block"
 	menu_closed.style.right = "155px"
 }
 
 function closeSideMenu() {
 	let header = document.querySelector("header")
-	/* header.style.display = "none" */
 	header.style.right = "-200px"
 
 	let menu_opening = document.querySelector(".menu-opening")
 	menu_opening.style.display = "block"
 
 	let menu_closed = document.querySelector(".menu-closed")
-	menu_closed.style.display = "none"
+	menu_closed.style.right = "-200px"
 }
 
 /* Themes */

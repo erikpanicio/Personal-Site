@@ -74,14 +74,15 @@ nav img {
 .test {
 	position: fixed;
 	right: 0;
-	padding: 20px;
+	padding: 10px 20px 30px 20px; /* 20px 30px 40px 30px */
 	margin: 20px 10px;
+	z-index: 10;
 }
 
 .menu-opening {
-	display: none;
 	background-color: transparent;
 	color: white;
+	
 	/* margin: 30px 30px 30px 20px; */
 
 	/* fiz desse jeito para poder colocar o box-shadow */
@@ -113,14 +114,13 @@ nav img {
 }
 
 .menu-closed {
-	display: none;
 	background-color: transparent;
 	color: white;
 	position: fixed;
 	right: -200px;
 	padding: 20px;
 	/* margin: 20px; */
-	transition: all 1s;
+	transition: right 1s;
 	z-index: 1000;
 }
 
@@ -395,7 +395,7 @@ h1 {
 
 @media (max-width: 600px) {
 	header {
-		display: none;
+		display: block;
 		height: 100vh;
 		width: 200px;
 		right: -200px;
@@ -409,7 +409,7 @@ h1 {
 
 	nav ul.navegation {
 		flex-direction: column;
-		margin-top: 60px;
+		margin-top: 50px;
 	}
 
 	nav a {
