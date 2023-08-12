@@ -71,6 +71,7 @@ nav img {
 }
 
 .test {
+	display: none;
 	position: fixed;
 	right: 0;
 	padding: 10px 20px 30px 20px; /* 20px 30px 40px 30px */
@@ -415,7 +416,7 @@ h1 {
 		font-size: 20px;
 	}
 
-	.open_menu {
+	.test {
 		display: block;	
 	}
 
